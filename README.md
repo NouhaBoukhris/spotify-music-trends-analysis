@@ -4,7 +4,7 @@
 
 A collaborative university project analyzing **11,762 Spotify tracks** to explore music popularity, audio characteristics, genres, and artist performance. The project combines data preparation, dimensional modeling, and an interactive three-page Power BI report to support music-industry decision-making.
 
-**[📊 View the dashboard preview (PDF)](powerbi/dashboard_preview.pdf)** · [Power BI report](powerbi/Spotify_BIFV.pbix) · [Power BI template](powerbi/Spotify_BIFV.pbit)
+**[View Dashboard (PDF)](powerbi/dashboard_preview.pdf)** · [Download Interactive Dashboard (.pbix)](powerbi/Spotify_BIFV.pbix) · [Download Power BI Template (.pbit)](powerbi/Spotify_BIFV.pbit) · [Read Final Project Report (PDF)](docs/final_report.pdf)
 
 ## Project overview
 
