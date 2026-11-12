@@ -33,11 +33,11 @@ A collaborative university project analyzing **11,762 Spotify tracks** to explor
 | Path | Purpose |
 | --- | --- |
 | [`notebooks/etl_preprocessing.ipynb`](notebooks/etl_preprocessing.ipynb) | Original ETL and preprocessing notebook |
-| `data/` | Cleaned analysis dataset and data dictionary (to be added) |
+| [`data/spotify_cleaned.csv`](data/spotify_cleaned.csv) | Cleaned analysis dataset; data dictionary to be added |
 | [`powerbi/`](powerbi/) | [Power BI report](powerbi/Spotify_BIFV.pbix), [template](powerbi/Spotify_BIFV.pbit), and [dashboard preview](powerbi/dashboard_preview.pdf) |
 | [`docs/`](docs/) | [Final report](docs/final_report.pdf), [data model diagram](docs/data_model_diagram.pdf), [DAX measures](docs/dax_measures.pdf), [use case](docs/use_case.pdf), and [presentation](docs/presentation.pdf) |
 
-**Status:** Dashboard, ETL notebook, and supporting documentation available. Cleaned dataset and data dictionary are being added.
+**Status:** Dashboard, ETL notebook, cleaned dataset, and supporting documentation available. Data dictionary to be added.
 
 
 ## Tools and techniques
