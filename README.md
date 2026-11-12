@@ -39,9 +39,6 @@ A collaborative university project analyzing **11,762 Spotify tracks** to explor
 
 **Status:** Portfolio reorganization in progress. The ETL notebook, Power BI dashboard, template, and PDF preview are available; remaining supporting documents are being organized.
 
-## Original project
-
-The complete original submission remains available at [BI-DBM-Project](https://github.com/nouhaBks/BI-DBM-Project). This repository is the curated portfolio version.
 
 ## Tools and techniques
 
