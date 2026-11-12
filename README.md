@@ -4,6 +4,8 @@
 
 A collaborative university project analyzing **11,762 Spotify tracks** to explore music popularity, audio characteristics, genres, and artist performance. The project combines data preparation, dimensional modeling, and an interactive three-page Power BI report to support music-industry decision-making.
 
+**[📊 View the dashboard preview (PDF)](powerbi/dashboard_preview.pdf)** · [Power BI report](powerbi/Spotify_BIFV.pbix) · [Power BI template](powerbi/Spotify_BIFV.pbit)
+
 ## Project overview
 
 - **Objective:** Explore how music popularity varies across genres, artists, release periods, and audio features.
@@ -32,10 +34,10 @@ A collaborative university project analyzing **11,762 Spotify tracks** to explor
 | --- | --- |
 | [`notebooks/etl_preprocessing.ipynb`](notebooks/etl_preprocessing.ipynb) | Original ETL and preprocessing notebook |
 | `data/` | Cleaned analysis dataset and data dictionary (to be added) |
-| `powerbi/` | Power BI report, template, DAX documentation, and dashboard preview (to be added) |
+| `powerbi/` | Power BI report, template, and dashboard preview (PDF); DAX documentation to be added |
 | `docs/` | Final report, data model diagram, use case, and presentation (to be added) |
 
-**Status:** Portfolio reorganization in progress. The notebook is available; dashboard and supporting files are being transferred from the original coursework repository.
+**Status:** Portfolio reorganization in progress. The ETL notebook, Power BI dashboard, template, and PDF preview are available; remaining supporting documents are being organized.
 
 ## Original project
 
