@@ -21,6 +21,22 @@ A collaborative university project analyzing **11,762 Spotify tracks** to explor
 2. **Audio feature analysis** — relationships between popularity and characteristics such as danceability and energy.
 3. **Artist drill-through** — artist-level exploration and comparisons.
 
+## Dashboard screenshots
+
+The following screenshots provide a quick preview of the three-page Power BI dashboard. For the complete report, see the [dashboard PDF](powerbi/dashboard_preview.pdf).
+
+### 1. Executive summary
+
+![Spotify executive summary dashboard](images/01_executive_summary.png)
+
+### 2. Audio feature analysis
+
+![Spotify audio features dashboard](images/02_audio_features.png)
+
+### 3. Artist drill-through
+
+![Spotify artist drill-through dashboard](images/03_artist_drillthrough.png)
+
 ## Selected findings
 
 - The dataset showed increasing popularity trends across releases from 2015–2020.
