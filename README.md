@@ -48,7 +48,7 @@ The following screenshots provide a quick preview of the three-page Power BI das
 
 | Path | Purpose |
 | --- | --- |
-| [`notebooks/etl_preprocessing.ipynb`](notebooks/etl_preprocessing.ipynb) | Original ETL and preprocessing notebook |
+| [`notebooks/`](notebooks/) | [Portable data validation notebook](notebooks/etl_preprocessing.ipynb) and [original coursework ETL](notebooks/original_etl_coursework.ipynb) |
 | [`data/`](data/) | [Cleaned Spotify dataset](data/spotify_cleaned.csv) and [data dictionary](data/Data_dictionary.pdf) |
 | [`powerbi/`](powerbi/) | [Power BI report](powerbi/Spotify_BIFV.pbix), [template](powerbi/Spotify_BIFV.pbit), and [dashboard preview](powerbi/dashboard_preview.pdf) |
 | [`docs/`](docs/) | [Final report](docs/final_report.pdf), [data model diagram](docs/data_model_diagram.pdf), [DAX measures](docs/dax_measures.pdf), [use case](docs/use_case.pdf), and [presentation](docs/presentation.pdf) |
@@ -60,7 +60,7 @@ The following screenshots provide a quick preview of the three-page Power BI das
 
 ### 1. Data preparation and quality checks
 
-The [ETL notebook](notebooks/etl_preprocessing.ipynb) documents a Python/pandas workflow that:
+The [original coursework ETL notebook](notebooks/original_etl_coursework.ipynb) documents a Python/pandas workflow that:
 
 - Inspects missing values, data types, and duplicate rows.
 - Converts `release_date` to a datetime field with invalid values coerced to missing.
@@ -68,7 +68,7 @@ The [ETL notebook](notebooks/etl_preprocessing.ipynb) documents a Python/pandas 
 - Uses the interquartile range (IQR) rule to cap values outside 1.5 × IQR for numeric columns.
 - Exports intermediate and processed CSV files.
 
-The [portfolio dataset](data/spotify_cleaned.csv) and [data dictionary](data/Data_dictionary.pdf) are provided for inspection. The notebook is preserved as a coursework artifact rather than a verified end-to-end reproducible pipeline.
+The [portfolio dataset](data/spotify_cleaned.csv) and [data dictionary](data/Data_dictionary.pdf) are provided for inspection. The original notebook is preserved for reference. A [portable validation notebook](notebooks/etl_preprocessing.ipynb) reads the published cleaned CSV without reapplying transformations; optional raw-data preprocessing requires the original source dataset.
 
 ### 2. Data modeling
 
@@ -86,7 +86,7 @@ Power BI and DAX were used to create the three dashboard pages, including high-l
 
 **Template:** Download [`Spotify_BIFV.pbit`](powerbi/Spotify_BIFV.pbit) to inspect the reusable report template. Loading the template may require configuring its data source.
 
-**Python notebook:** The [ETL notebook](notebooks/etl_preprocessing.ipynb) uses pandas, NumPy, matplotlib, seaborn, and tqdm. It refers to an original input file through a local Windows path and expects a `duration_ms` column, whereas the provided cleaned CSV contains `duration_min`. Consequently, the cleaned CSV is **not** a drop-in replacement for the notebook's original input. The notebook also includes an apparent `Genr`/`tempo` assignment in its final cell; review that line before reuse. The notebook is shared to document the preparation steps, not as a ready-to-run script.
+**Python notebook:** Open [`notebooks/etl_preprocessing.ipynb`](notebooks/etl_preprocessing.ipynb) in Jupyter and run the cells from the repository root or `notebooks/` directory. Install `pandas` and `numpy` first (`pip install pandas numpy`). By default it validates the included cleaned CSV without altering it. To process raw input instead, supply the original raw dataset containing `duration_ms` and set `raw_path` in the first code cell. The [original coursework notebook](notebooks/original_etl_coursework.ipynb) is preserved unchanged. The new notebook has not yet been execution-tested against the repository CSV, and raw preprocessing is not confirmed to reproduce the published dashboard dataset exactly.
 
 ## Tools and techniques
 
