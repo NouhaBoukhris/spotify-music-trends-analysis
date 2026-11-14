@@ -1,0 +1,19 @@
+name: Validate Spotify preprocessing notebook
+on:
+  push:
+    paths:
+      - 'notebooks/etl_preprocessing.ipynb'
+      - 'data/spotify_cleaned.csv'
+      - '.github/workflows/validate-notebook.yml'
+  workflow_dispatch:
+jobs:
+  notebook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pandas numpy nbconvert nbformat ipykernel
+      - name: Execute notebook against archived dataset
+        run: jupyter nbconvert --to notebook --execute notebooks/etl_preprocessing.ipynb --output /tmp/spotify-validated.ipynb --ExecutePreprocessor.timeout=300
